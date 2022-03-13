@@ -15,7 +15,7 @@ export default function Items({ results }: ItemsProps) {
             <div className="ml-4">
               {
                 data.arti.map((arti, i) => (
-                  <div key={arti.kelas_kata + i} className={`${i+1 != data.arti.length && 'border-b'} border-gray-200 py-2`}>
+                  <div key={arti.kelas_kata + i} className={`${(i+1) !== data.arti.length && 'border-b'} border-gray-200 py-2`}>
                     <p>
                       <span className="italic text-red-600">
                         {arti.kelas_kata.replace(/\[[^\][]*]/g, ' ')}
